@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 568px;
+    background: url(./img/23.png) no-repeat;
+}
+
+.header {
+    width: 105%;
+    height: 47%;
+    position: relative;
+    margin-top: -30px;
+    margin-left: -20px;
+    background: url(./img/d.png) no-repeat;
+    background-size: 105% 127%;
+    transform: rotate(-10deg);
+    animation: change 2s linear 0s infinite forwards;
+}
+
+@-webkit-keyframes change {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(15deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    75% {
+        transform: rotate(-15deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes changae {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.music-animate {
+    position: absolute;
+    z-index: 100;
+    top: 4%;
+    right: 7%;
+}
+
+.music-animate img:nth-child(1) {
+    position: absolute;
+    top: -30px;
+    right: -30px
+}
+
+.music-animate img:nth-child(2) {
+    position: absolute;
+    top: 4%;
+    animation: changae 2s linear 0s infinite;
+    right: 7%;
+}
+
+
+/* .music-animate img:nth-child(2):hover {
+    animation-fill-mode: forwards;
+} */
+
+@-webkit-keyframes kjfdj {
+    0% {
+        top: 10%;
+        left: 30%;
+    }
+    25% {
+        top: 11%;
+        left: 35%;
+    }
+    50% {
+        top: 10%;
+        left: 30%;
+    }
+    75% {
+        top: 11%;
+        left: 25%;
+    }
+    100% {
+        top: 10%;
+        left: 30%;
+    }
+}
+
+.header-child {
+    position: absolute;
+    width: 153px;
+    height: 260px;
+    top: 10%;
+    left: 30%;
+    z-index: 200;
+    background: url(./img/87.png) no-repeat;
+    background-size: 127px 255px;
+    animation: kjfdj 1s linear 0.5s infinite forwards;
+}
+
+.benediction {
+    position: absolute;
+    top: 42%;
+    left: 8%;
+    width: 317px;
+    height: 288px;
+    background: url(./img/a8.png) no-repeat;
+    background-size: 317px 288px;
+}
+
+.benediction-container {
+    position: absolute;
+    top: 42%;
+    left: 8%;
+    width: 100%;
+    background: url(./img/4b.png) no-repeat;
+    background-size: 317px 288px;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 700;
+    bottom: -4%;
+    /* left: 5%; */
+    height: 80px;
+    width: 100%;
+    /* background: url(./img/4d.png) no-repeat; */
+    background-size: 338px 80px;
+    animation: ejeeer 1.5s linear 0s infinite;
+}
+
+.cloud1 {
+    position: absolute;
+    z-index: 700;
+    bottom: -4%;
+    /* left: 5%; */
+    height: 80px;
+    width: 100%;
+    /* background: url(./img/4d.png) no-repeat; */
+    background-size: 338px 80px;
+}
+
+@-webkit-keyframes ejeeer {
+    0% {
+        bottom: -4%;
+        left: 0%;
+    }
+    25% {
+        bottom: -5%;
+        left: 10%;
+        transform: rotate(5deg);
+    }
+    50% {
+        bottom: -4%;
+        left: 0%;
+    }
+    75% {
+        bottom: -5%;
+        left: -10%;
+        transform: rotate(-5deg);
+    }
+    100% {
+        bottom: -4%;
+        left: 0%;
+    }
+}
